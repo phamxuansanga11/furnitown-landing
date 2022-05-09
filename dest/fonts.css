@@ -1,0 +1,59 @@
+/* FONT FACE - font-display: fallback; */
+
+/* VÍ DỤ - tuỳ chỉnh theo từng dự án*/
+
+@font-face {
+    font-family: "ir";
+    src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "im";
+    src: url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "ib";
+    src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "ebb";
+    src: url("../fonts/ElleBaskerville-Bold.otf") format("woff2"), url("../fonts/ElleBaskerville-BoldItalic.otf") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "ebItalic";
+    src: url("../fonts/ElleBaskerville-Italic.otf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "ebbitalic";
+    src: url("../fonts/ElleBaskerville-SemiBold.otf") format("woff2"), url("../fonts/ElleBaskerville-SemiBoldItalic.otf") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "eb";
+    src: url("../fonts/ElleBaskerville.otf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}

@@ -1,0 +1,254 @@
+// css header
+
+header{  
+    .main__header{  
+        height: 70px;
+        width: 100%;
+        position: fixed;
+        z-index: 600;
+        top: 0;
+        transform: translateY(-110%);
+        background-color: #132539;
+        &.active{
+            transform: translateY(0);
+            transition: 0.5s;
+        }
+        .container__desktop{
+            display: flex;
+            justify-content: space-around;
+            align-items: center; 
+            height: 100%;
+            .menu__left{
+                margin-left: 20px;
+                ul{
+                    display: flex;
+                    justify-content: space-evenly;
+                    width: 350px;
+                    li{
+                        &:hover{
+                            opacity: 0.6;
+                        }
+                        a{
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 14px;
+                            color: #fff;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+            .logo{
+                img{
+                    width: 80%;
+                    display: flex;
+                    margin: 0 auto;
+                }
+            }
+            .menu__right{
+                margin-right: 20px;
+                ul{
+                    display: flex;
+                    justify-content: space-evenly;
+                    width: 350px;
+                    li{
+                        &:hover{
+                            opacity: 0.6;
+                        }
+                        a{
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 14px;
+                            color: #fff;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .main__header-mobile{ 
+        background-color: #132539;
+        height: 70px;
+        width: 100%;
+        display: none;
+        position: fixed;
+        top: 0;
+        z-index: 700;
+        .container__mobile{
+            display: flex;
+            height: 100%;
+            width: 100%;
+            .left{
+                align-self: center;
+                padding-left: 20px;
+                cursor: pointer;
+                min-width: 70px;
+                &.active{
+                    padding-left: 26px;
+                    padding-bottom: 5px;
+                    span{
+                        display: none;
+                    }
+                    &::after{
+                        content: "";
+                        display: block;
+                        width: 40px;
+                        height: 2px;
+                        background-color: #fff;
+                        margin-top: 10px;
+                        transform: rotate(45deg) translateX(-8px);
+                    }
+                    &::before{
+                        content: "";
+                        display: block;
+                        width: 40px;
+                        height: 2px;
+                        background-color: #fff;
+                        margin-top: 10px;
+                        transform: rotate(-45deg) translateX(-8px);
+                    }
+                }
+                span{
+                    display: block;
+                    width: 40px;
+                    height: 2px;
+                    background-color: #fff;
+                }
+                &::before{
+                    content: "";
+                    display: block;
+                    width: 40px;
+                    height: 2px;
+                    background-color: #fff;
+                    margin-bottom: 8px;
+                    transform: rotate(0deg) translateX(0px);
+                    transition: 0.3s;
+                }
+                &::after{
+                    content: "";
+                    display: block;
+                    width: 40px;
+                    height: 2px;
+                    background-color: #fff;
+                    margin-top: 8px;
+                    transform: rotate(0deg) translateX(0px);
+                    transition: 0.3s;
+                }
+                .sub__nav-menu{
+                    .nav__menu{
+                        background-color: #1e1f26;
+                        width: 100vw;
+                        height: 100vh;
+                        z-index: 500;
+                        position: absolute;
+                        top: 70px;
+                        left: 0;
+                        transform: translateX(-100%);
+                        transition: 0.4s;
+                        &.active{
+                            transform: translateX(0);
+                            transition: 0.4s;
+                        }
+                        .nav__header{
+                            padding-left: 35px;
+                            padding-right: 25px;
+                            padding-top: 30px;
+                            display: flex;
+                            justify-content: space-between;
+                            p{
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 11px;
+                                line-height: 30px;
+                                color: #fff;
+                                text-transform: uppercase;
+                            }
+                            .followus{
+                                display: flex;
+                                justify-content: space-evenly;
+                                width: 155px;
+                                i{
+                                    height: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                }
+                            }
+                        }
+                        .nav__content{
+                            display: flex;
+                            justify-content: flex-start;
+                            padding-top: 50px;
+                            padding-left: 35px;
+                            padding-right: 25px;
+                            .nav__list-menu{
+                                padding-left: 50px;
+                                ul{
+                                    li{
+                                        padding: 25px 0;
+                                        a{
+                                            font-family: "er";
+                                            color: white;
+                                            font-size: 14px;
+                                            line-height: 30px;
+                                            text-transform: uppercase;
+                                            opacity: 1;
+                                            &:hover{
+                                                opacity: 0.6;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .logo-right{
+                display: flex;
+                justify-content: center;
+                padding-right: 20px;
+                width: 100%;
+                i{
+                    display: flex;
+                    a{
+                        display: flex;
+                        img{
+                            width: 80%;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 993px) {
+    header .container .main__header .menu__left {
+        margin-left: 0;
+    }
+    header .container .main__header .menu__right {
+        margin-right: 0;
+    }
+    header .container .main__header .menu__left ul {
+        max-width: 280px;
+        padding-right: 15px;
+    }
+    header .container .main__header .menu__right ul {
+        max-width: 280px;
+        padding-left: 15px;
+    }
+    header .container .main__header {
+        display: none;
+    }
+    header .container .main__header-mobile {
+        display: flex;
+    }
+    header .main__header {
+        display: none;
+    }
+    header .main__header-mobile {
+        display: flex;
+    }
+}
