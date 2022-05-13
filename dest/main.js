@@ -78,5 +78,27 @@ backToTop.addEventListener('click', function(e){
 })
 
 
-//product__Page
-// const menuMobileProductPage
+//slider__flictiky
+var elem = document.querySelector('.main-carousel');
+var flkty = new Flickity( elem, {
+  // options
+  cellAlign: 'left',
+  contain: true,
+  pageDots: false,
+  wrapAround: true,
+  prevNextButtons: false,
+  groupCells: 1,
+});
+
+
+const btnPrev = document.querySelector('.main__slider .slider__fixed .btn__ctrl-slider .btn__prev')
+const btnNext = document.querySelector('.main__slider .slider__fixed .btn__ctrl-slider .btn__next')
+
+
+btnPrev.addEventListener('click', () => {
+    flkty.previous();
+})
+
+btnNext.addEventListener('click', () => {
+    flkty.next();
+})

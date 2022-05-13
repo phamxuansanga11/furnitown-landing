@@ -21,6 +21,8 @@
 
     <link rel="stylesheet" href="dest/style.min.css">
     <link rel="stylesheet" href="dest/fonts.css">
+    <link rel="stylesheet" href="./dest/flickity.css">
+    <link href="./fonts/fontawesome/css/all.css" rel="stylesheet">
 </head>
 
 <body class="homepage">
@@ -84,6 +86,14 @@
         <!-- Example HTML -->
         <section class="main__slider">
             <div class="slider__fixed">
+                <div class="btn__ctrl-slider">
+                    <div class="btn__prev">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="btn__next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
                 <div class="header__slider">
                     <p>Furnitown</p>
                     <p>Share</p>
@@ -140,8 +150,16 @@
                     <p>Sản phẩm Furnitown</p>
                 </div>
             </div>
-            <div class="slider__move">
-                <img src="./img/bg__home-sofa.jpg" alt="">
+            <div class="slider__move main-carousel ">
+                    <div class="carousel-cell">
+                        <img src="./img/bg__home-sofa.jpg" alt="">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="./img/bg__home-sofa.jpg" alt="">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="./img/bg__home-sofa.jpg" alt="">
+                    </div>
             </div>
         </section>
         <section class="content__homepage">
@@ -276,6 +294,7 @@
 
     <script type="text/javascript" src="dest/jsmain.min.js"></script>
     <script type="text/javascript" src="dest/main.js"></script>
+    <script type="text/javascript" src="./js/libs/flickity.pkgd.min.js"></script>
 
 </body>
 
