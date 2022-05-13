@@ -8,10 +8,11 @@ header{
         z-index: 600;
         top: 0;
         transform: translateY(-110%);
+        transition: transform 0.5s;
         background-color: #132539;
         &.active{
             transform: translateY(0);
-            transition: 0.5s;
+            transition: transform 0.5s;
         }
         .container__desktop{
             display: flex;
