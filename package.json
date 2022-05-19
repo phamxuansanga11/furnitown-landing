@@ -1,7 +1,7 @@
 {
-  "name": "grunt-template-project",
+  "name": "project-furnitown-landing",
   "version": "1.0.0",
-  "description": "This is grunt template project for training",
+  "description": "This is landing page",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +9,7 @@
   "keywords": [
     "task"
   ],
-  "author": "Tran Nghia CFD Circle",
+  "author": "PhamXuanSang",
   "license": "ISC",
   "devDependencies": {
     "grunt-browser-sync": "^2.2.0",
