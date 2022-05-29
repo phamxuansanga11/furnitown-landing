@@ -98,6 +98,7 @@ var flkty = new Flickity(elem, {
   wrapAround: true,
   prevNextButtons: false,
   groupCells: 1,
+  draggable: true,
 });
 
 const btnPrev = document.querySelector(
