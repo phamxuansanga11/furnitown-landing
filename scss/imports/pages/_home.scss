@@ -339,21 +339,6 @@
     }
   }
 }
-.bg__black {
-  width: 100vw;
-  height: 100vh;
-  background-color: #000;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 300;
-  opacity: 0.6;
-  //   pointer-events: none;
-  display: none;
-  &.active {
-    display: block;
-  }
-}
 @keyframes slit {
   from {
     transform: translateY(-30px);
